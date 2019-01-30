@@ -1,0 +1,223 @@
+@import 'color_theme';
+
+/*Main Layout*/
+#headerPanel {
+  background:#fff;
+  margin-top:10px;
+}
+
+#navPanel{
+	height:60px;
+	line-height: 60px;
+	width:100%;
+	background: $acc_color1;
+	font-size: 15px;
+}
+
+#mainPanel{
+	color: $main_color;
+}
+
+#contentPanel {
+	min-height:500px;
+	position: relative;
+	margin:30px 50px auto;
+}
+
+#footerPanel{
+	position: fixed;
+	bottom: 0;
+	width:100%;
+}
+
+
+
+.nav {
+	color:$acc_color3;
+	padding: 0px 30px;
+	display:inline-block;
+}
+.nav:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+.selectedNav{
+	color: $main_color;
+}
+#linkWraps{
+	text-align:center;
+	width:100%;
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: 2;
+}
+#whoAmI{
+	position: absolute;
+	right:20px;
+	z-index:3;
+	top:0;
+	color: $main_color;
+}
+#userIcon{
+	background:$acc_color3;
+	padding:10px;
+	border-radius:20px;
+	width:20px;
+	text-align: center;
+	color: $main_bg;
+	margin-right:10px;
+	font-size:20px;
+}
+
+#logo{
+	color: $acc_color3;
+	display:inline-block;
+	margin-left: 20px;
+	font-size: 18px;
+	font-weight: 600;
+	background: $acc_color1;
+	position: relative;
+	z-index:4;
+}
+
+
+// --------- Home ---------
+.marblesWrap{
+	width:42%;
+	display:inline-block;
+	text-align: right;
+	color:#fff;
+}
+.legend{
+	font-size:30px;
+	border-bottom: 1px $acc_color2 solid;
+	padding-bottom:5px;
+	text-align: left;
+}
+
+#transferright:hover, #transferleft:hover, #removemarble:hover{
+	cursor: pointer;
+	color:orange;
+}
+.ball{
+	display:inline-block;
+	margin:1px;
+	border:1px $main_bg solid;
+	padding:0 3px;
+}
+.ball:hover{
+	cursor: pointer;
+	border-bottom:1px #fff solid;
+}
+.selectedball{
+	border:1px #fff solid;
+}
+#description{
+	position: absolute;
+	bottom:75px;
+	width:100%;
+	text-align: center;
+}
+#toolWrap{
+	width:100%;
+	text-align: center;
+	position: fixed;
+	bottom:55px;
+}
+
+
+// --------- Create ---------
+.createball{
+	font-size:275px;
+	float:left;
+	color: transparent;
+	border: 2px dashed $main_color;
+	border-radius: 200px;
+	width: 270px;
+	height: 270px;
+}
+#transferWrap{
+	position: absolute;
+	width:100%;
+	text-align: center;
+	top:60px;
+}
+#createform{
+	float: left;
+	margin-left: 40px;
+}
+.createLegend{
+	width:45px;
+	display: inline-block;
+}
+#innerWrap{
+	width:800px;
+	margin:auto;
+	text-align: right;
+	margin-top:50px;
+}
+
+
+// --------- common ---------
+#blockdate{
+	position: absolute;
+	top:30px;
+	right:10px;
+	font-size:13px;
+	color: $hi_color1;
+	font-weight:bold;
+}
+
+.hint{
+	font-size:12px;
+	font-weight:bold;
+	color:$acc_color2;
+}
+#viewBCWrap{
+	color:$main_color;
+	padding:22px;
+	background: $acc_color1;
+	font-size:12px;
+	cursor:pointer;
+	width:180px;
+	text-align: center;
+	margin-left:25px;
+}
+#footerWrap{
+	height: 235px;
+	background: $acc_color0;
+	color: $acc_color2;
+	width:100%;
+	border-top:25px $acc_color1 solid;
+}
+
+
+// --------- app2 ---------
+#userSelect{
+	position: absolute;
+	top:45px;
+	z-index:2;
+	text-align: right;
+	margin-left:-40px;
+	padding-right:10px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	padding-bottom:5px;
+}
+.username:hover{
+	text-decoration: underline;
+}
+
+#userWrap, #userSelect{
+	width:120px;
+	background:#fff;
+}
+
+.invalid{
+	opacity: 0.5;
+}
+
+button:disabled{
+	opacity: 0.5;
+}
